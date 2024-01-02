@@ -1,65 +1,43 @@
-# festify-android
-An app for easing managing and registering for fests, events and workshops.
+# Festify-Android: A Solution for Streamlining Event Management
 
-#### Problem Statement:
--------------------------------------------------
-Many institutions and organizations have been continuously facing issues while organizing fests and events for properly managing invitations and registrations and it has been equally painful for people willing to attend these events to find where to register and then filling those lengthy traditional forms.  It’s a tough job to collect the data of people who are interested in attending an event.
-Sometimes due to unforeseen circumstances some people might need to cancel their registration for the event and then it becomes difficult for the organizers to update their systems and plan.
-Possible interested attendees may miss out on some event due to lack of information or even may forget about it considering how busy life on an individual is these days.
+**Project Overview:**
+Festify-Android is a cutting-edge application designed to simplify event management and registration processes. Focused on addressing the challenges faced by institutions and organizations in organizing fests, events, and workshops, it also aims to enhance the experience for individuals attending these events.
 
+**Problem Statement:**
+Organizers often struggle with managing invitations and registrations for events, while attendees find it cumbersome to locate registration information and complete lengthy forms. Additionally, unforeseen circumstances may lead to event cancellations, causing challenges for organizers in updating their systems.
 
-#### Proposed Solution:
--------------------------------------------------
-This project aims to minimize the hassle and ease the process for people willing to organize and attend some events. People willing to attend some events just have to sign up once filling their information and then not worry about filling different forms for different events. The application fetches list of updated events and presents them to the user category wise, where they can choose some event which interests them and register for with just touch of a button. The application always maintains a list of events for which the user has registered already so they can manage their time accordingly. User also has an option to cancel registration for an event by just another touch. This greatly eases the process for people attending and also for the people organizing the event as they also can just fetch out the details of people registering for the event.
-| | | |
-| - | - | - |
-|<img src="https://user-images.githubusercontent.com/78897906/148649277-156862d8-52e4-444c-aea8-d196ea281d2b.jpeg" width="220">| <img src="https://user-images.githubusercontent.com/78897906/148649330-ecaf01a9-6af6-471a-bb4f-df2ab8ccf38b.jpeg" width="220"> | <img src="https://user-images.githubusercontent.com/78897906/148649680-ee8e57a2-60c9-47cd-bd81-792fc98ee22f.jpeg" width="220">|
-|<img src="https://user-images.githubusercontent.com/78897906/148649683-f03fee25-078a-49c6-9df9-1744d9121390.jpeg" width="220">|<img src="https://user-images.githubusercontent.com/78897906/148649690-dc429aa1-dbcc-4c37-b888-4cc867939080.jpeg" width="220">|<img src="https://user-images.githubusercontent.com/78897906/148649694-4ea6e0c9-2dfa-4313-bff8-f9df7e6e545a.jpeg" width="220">|
-|<img src="https://user-images.githubusercontent.com/78897906/148649696-529fa627-8d1b-4fc1-a4ad-63c44645b100.jpeg" width="220">| | |
+**Proposed Solution:**
+Festify-Android offers a streamlined solution by allowing users to register once with their information. The app fetches and presents updated event lists, categorized for easy browsing. Users can register for events with a single touch and manage their registrations efficiently. The application also provides the option to cancel registrations easily. This not only simplifies the process for attendees but also facilitates organizers in managing participant details.
 
-#### Functionality & Concepts used:
--------------------------------------------------
-- The App has an interactive interface which helps the user to register/unregister for an event .
+**Key Features:**
+- Interactive user interface for easy event registration and management.
+- Utilization of POST requests for secure login and signup processes.
+- Implementation of Constraint Layout for responsive design across various screen sizes.
+- Integration of SliderView for dynamic event promotions.
+- Utilization of RecyclerView for organized display of tech stacks and events.
+- Implementation of Room Database to persistently store and display registered events.
+- Use of ViewModels and LiveData for efficient data handling and UI updates.
+- Navigation Component and BottomNavigation for seamless navigation between fragments.
 
-- **POST request** :
-For the Login and Signup screens user posts his/her data and with the help of a post request we send this data to a backend server and the server checks whether the details were good enough to go or need to be modified and provides an appropriate response according to it
+**Functionality & Concepts Used:**
+- POST request: Secure data transmission for login and signup processes.
+- Constraint Layout: Responsive design for diverse screen sizes.
+- SliderView: Dynamic event promotion through sliding views.
+- RecyclerView: Organized display of tech stacks and events.
+- Room Database: Persistent storage for registered events.
+- ViewModels: Efficient data handling for enhanced architecture.
+- LiveData: Real-time UI updates for data changes.
+- Navigation Component and BottomNavigation: Smooth navigation between fragments.
 
-- **Constraint Layout** : 
-Most of the activities in the app uses a flexible constraint layout, which is easy to handle for different screen sizes
+**Application Link & Future Scope:**
+Download the Festify-Android app [here](https://drive.google.com/file/d/1yiIqOEHv8ai26nImwrYlxA6YDlQEfTo9/view?usp=sharing).
 
-- **SliderView** :
-To promote some events we have used a SliderView which slides automatically after 2 secs and gets updated with another event.
+The app is in the alpha phase, with ongoing development and improvements planned. Future enhancements include fetching event data from a backend server, introducing a "Teams" fragment to find event teammates, and adding a fragment for users to share event-related pictures.
 
-- **RecyclerView** :
-To represent the different type of tech stacks and different events in a fest we use a RecyclerView which arranges them in an ordered scroll-able list.
+**Setting Up the Project for Development:**
+1. Create a folder named "festify."
+2. Fork the project and clone the forked project inside the "festify" folder.
+3. Navigate to the "festify-android" directory and run `bash scripts/setup.sh` (for Windows, use WSL).
+4. The project is now ready for development.
 
-- **Room Database** :
-So when a user registers for an event a duplicate of that specific view goes into HOME fragment and we could see the events in an order of registered time in the HOME fragment. Even after closing and opening the app the events registered remains same with the help of Room Database
-
-- **ViewModels** :
-We have created Viewmodels for DataBase and API calls related fragments so the data survives configuration changes while also following a better architecture.
-
-- **LiveData** :
-For Room Database when the data gets updated i.e., added or deleted, the app gets notified that there was a change and changes the RecyclerView accordingly
-For API calls we get a response whenever we post the data,so whenever we post a new data then app gets notified that there was a change and responds accordingly
-
-- **Navigation Component and BottomNavigation** :
-The app uses Navigation component using a navGraph and a navHostFragment in pair with BottomNavigation to let user switch between various fragments with ease.
-
-
-#### Application Link & Future Scope :
--------------------------------------------------
- Download our App from here [applink](https://drive.google.com/file/d/1yiIqOEHv8ai26nImwrYlxA6YDlQEfTo9/view?usp=sharing)<br>
-
-- The App is still in Alpha phase and we have to make much changes to it.
-- We are working on a way to fetch the data of events from the backend server
-- We are adding a “Teams” Fragment which is used to find teammates to participate together in a team-event.
-We will introduce a new fragment for users to post pictures and show their excitement towards the event
-
-
-#### To setup the project for starting developement
--------------------------------------------------
-1. Make a folder named festify.
-2. Fork the project and then Clone the project forked project inside festify.
-3. cd to the festify-android then run `bash scripts/setup.sh` , if you are in windows then fire up the wsl and run the same command.
-4. you are ready to contribute.
+Feel free to contribute and be a part of enhancing event management through Festify-Android!
