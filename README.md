@@ -1,7 +1,7 @@
 # Festify: A Solution for Streamlining Event Management
 
 **Project Overview:**
-Festify-Android is a cutting-edge application designed to simplify event management and registration processes. Focused on addressing the challenges faced by institutions and organizations in organizing fests, events, and workshops, it also aims to enhance the experience for individuals attending these events.
+Festify is a cutting-edge application designed to simplify event management and registration processes. Focused on addressing the challenges faced by institutions and organizations in organizing fests, events, and workshops, it also aims to enhance the experience for individuals attending these events.
 
 **Problem Statement:**
 Organizers often struggle with managing invitations and registrations for events, while attendees find it cumbersome to locate registration information and complete lengthy forms. Additionally, unforeseen circumstances may lead to event cancellations, causing challenges for organizers in updating their systems.
@@ -30,7 +30,7 @@ Festify-Android offers a streamlined solution by allowing users to register once
 - Navigation Component and BottomNavigation: Smooth navigation between fragments.
 
 **Application Link & Future Scope:**
-Download the Festify-Android app [here](https://drive.google.com/file/d/1yiIqOEHv8ai26nImwrYlxA6YDlQEfTo9/view?usp=sharing).
+Download the Festify app [here](https://drive.google.com/file/d/1yiIqOEHv8ai26nImwrYlxA6YDlQEfTo9/view?usp=sharing).
 
 The app is in the alpha phase, with ongoing development and improvements planned. Future enhancements include fetching event data from a backend server, introducing a "Teams" fragment to find event teammates, and adding a fragment for users to share event-related pictures.
 
